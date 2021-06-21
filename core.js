@@ -13,14 +13,14 @@ function createLink() {
 
 function chatStart() {
 	if (!phone.value)
-		return statusBox(`Insert phone number`);
+		return superBox(`Insira um número de telefone`);
 	
 	return window.location.href = createLink();
 }
 
 function copyLink() {
 	if (!phone.value)
-		return statusBox(`Insert phone number`);
+		return superBox(`Insira um número de telefone`);
 
 	let copy = createLink();
 	let textarea = document.createElement('textarea');
@@ -30,23 +30,23 @@ function copyLink() {
 	document.execCommand('copy');
 	textarea.remove();
 
-	statusBox(`Copied link to clipboard`);
+	superBox(`Copiado para a área de transferência`);
 }
 
-function statusBox(text) {
-	closeStatusBox();
+function superBox(text) {
+	closeSuperBox();
 
-	let statusBox = document.createElement('div');
-	statusBox.setAttribute('class', 'statusBox');
-	statusBox.setAttribute('onclick', 'closeStatusBox()');
-	
-	statusBox.innerText = `${text}`;
+	let superBox = document.createElement('div');
+	superBox.setAttribute('class', 'superBox');
+	superBox.setAttribute('onclick', 'closeSuperBox()');
 
-	return document.body.appendChild(statusBox);
+	superBox.innerHTML = `<div class="statusBox"> <p> ${text} </p> </div>`;
+
+	return document.body.appendChild(superBox);
 }
 
-function closeStatusBox() {
-	let node = document.querySelector('div.statusBox');
+function closeSuperBox() {
+	let node = document.querySelector('div.superBox');
 	if (node)
 		return node.parentNode.removeChild(node);
 }
