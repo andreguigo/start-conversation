@@ -40,13 +40,13 @@ function superBox(text) {
 	superBox.setAttribute('class', 'superBox');
 	superBox.setAttribute('onclick', 'closeSuperBox()');
 
-	superBox.innerHTML = `<div class="statusBox"> <p> ${text} </p> </div>`;
+	superBox.innerHTML = `<div class="statusBox"> <div class="statusBoxTitle"> ${text} </div> <div class="statusBoxTxt"> OK </div> </div>`;
 
 	return document.body.appendChild(superBox);
 }
 
 function closeSuperBox() {
-	let node = document.querySelector('div.superBox');
-	if (node)
-		return node.parentNode.removeChild(node);
+	let closeSuperBox = document.querySelector('div.superBox');
+	if (closeSuperBox)
+		return closeSuperBox.parentNode.removeChild(closeSuperBox);
 }

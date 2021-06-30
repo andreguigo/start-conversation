@@ -1,7 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+.color1 {color: #000000;}
+.color2 {color: #052b45;}
+.color3 {color: #056190;}
+.color4 {color: #00a1e6;}
+.color5 {color: #00eaff;}
+
 body {
 	align-items: center;
+	background-color: #056190;
+	color: #ffffff;
 	display: flex;
 	font-family: 'Open Sans', sans-serif;
 	height: 100vh;
@@ -25,20 +33,26 @@ h1, h3 {
 }
 
 input, textarea {
-	border: 1px solid #000;
+	background-color: #052b45;
+	border: none;
+	border-radius: 25px;
+	color: #ffffff;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 150%;
+	font-size: 120%;
 	margin-bottom: 10px;
-	padding: 7px 5px;
+	outline: none;
+	padding: 7px 15px;
 	width: 96%;
 }
 
 button {
-	background-color: #000;
-	border: none;
-	color: #fff;
+	background-color: #056190;
+	border: 1px solid #00eaff;
+	border-radius: 25px;
+	color: #00eaff;
+	cursor: pointer;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 150%;
+	font-size: 120%;
 	margin-bottom: 10px;
 	padding: 7px 5px;
 	width: 100%;
@@ -57,17 +71,28 @@ button {
 }
 
 .statusBox {
-	align-items: center;
-	background-color: #fff;
-	border-radius: 10px;
-	display: flex;
-	height: 15vh;
+	align-content: center;
+	background-color: #052b45;
+	border-radius: 15px;
+	box-shadow: 0 0 1em #000000;
+	cursor: pointer;
+	display: inline-grid;
+	height: 12vh;
 	margin: 0 auto;
-	padding: 10px 20px;
+	padding: 0 20px;
 	width: 25vh;
 	justify-content: center;
 }
 
-.statusBox p {
+.statusBox .statusBoxTitle {
+	color: #ffffff;
+	text-align: center;
+}
+
+.statusBox .statusBoxTxt {
+	border-top: 1px solid #ffffff;
+	color: #ffffff;
+	margin-top: 10px;
+	padding-top: 10px;
 	text-align: center;
 }
