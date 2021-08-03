@@ -13,8 +13,9 @@ body {
 }
 
 section {
+	margin: 0 auto;
 	padding: 10px 20px;
-	width: 100vh;
+	width: 50vh;
 }
 
 h1 {
@@ -73,7 +74,7 @@ button {
 	display: inline-grid;
 	height: 12vh;
 	margin: 0 auto;
-	padding: 0 20px;
+	padding: 10px 20px;
 	width: 25vh;
 	justify-content: center;
 }
