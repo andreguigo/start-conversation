@@ -2,8 +2,8 @@
 
 body {
 	align-items: center;
-	background-color: #056190;
-	color: #ffffff;
+	background-color: snow;
+	color: black;
 	display: flex;
 	font-family: 'Open Sans', sans-serif;
 	height: 100vh;
@@ -28,10 +28,10 @@ h1, h3 {
 }
 
 input, textarea {
-	background-color: #052b45;
-	border: none;
+	background-color: snow;
+	border: 1px solid black;
 	border-radius: 25px;
-	color: #ffffff;
+	color: black;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 120%;
 	margin-bottom: 10px;
@@ -41,10 +41,10 @@ input, textarea {
 }
 
 button {
-	background-color: #056190;
-	border: 1px solid #00eaff;
+	background-color: black;
+	border: none;
 	border-radius: 25px;
-	color: #00eaff;
+	color: snow;
 	cursor: pointer;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 120%;
@@ -55,7 +55,7 @@ button {
 
 .superBox {
 	align-items: center;
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(255,255,255,0.5);
 	display: flex;
 	height: 100vh;
 	margin: 0 auto;
@@ -67,9 +67,9 @@ button {
 
 .statusBox {
 	align-content: center;
-	background-color: #052b45;
+	background-color: white;
 	border-radius: 15px;
-	box-shadow: 0 0 1em #000000;
+	box-shadow: 0 0 1em gray;
 	cursor: pointer;
 	display: inline-grid;
 	height: 12vh;
@@ -80,13 +80,13 @@ button {
 }
 
 .statusBox .statusBoxTitle {
-	color: #ffffff;
+	color: black;
 	text-align: center;
 }
 
 .statusBox .statusBoxTxt {
-	border-top: 1px solid #ffffff;
-	color: #ffffff;
+	border-top: 1px solid black;
+	color: black;
 	margin-top: 10px;
 	padding-top: 10px;
 	text-align: center;
