@@ -4,17 +4,19 @@ document.querySelector('[copy]').addEventListener('click', copyLink);
 const phone = document.querySelector('[phone]');
 const message = document.querySelector('[message]');
 
+let url_api = `https://api.whatsapp.com/send?phone=+55`
+
 function createLink() {
 	if (!message.value)
-		return `https://api.whatsapp.com/send?phone=+55${phone.value.trim()}`;
-	
-	return `https://api.whatsapp.com/send?phone=+55${phone.value.trim()}&text=${message.value.trim()}`;
+		return `${url_api}${phone.value.trim()}`;
+
+	return `${url_api}${phone.value.trim()}&text=${message.value.trim()}`;
 }
 
 function chatStart() {
 	if (!phone.value)
 		return superBox(`Insira um número de telefone`);
-	
+
 	return window.location.href = createLink();
 }
 
@@ -49,21 +51,4 @@ function closeSuperBox() {
 	let closeSuperBox = document.querySelector('div.superBox');
 	if (closeSuperBox)
 		return closeSuperBox.parentNode.removeChild(closeSuperBox);
-}
-
-function mask(o, f) {
-	v_obj = o;
-	v_fun = f;
-	setTimeout(exeMask, 1);
-}
-
-function exeMask() {
-	v_obj.value = v_fun(v_obj.value);
-}
-
-function tel_br(v) {
-	v = v.replace(/\D/g, "");
-    v = v.replace(/^(\d\d)(\d)/g,"($1) $2");
-    v = v.replace(/(\d{5})(\d)/,"$1-$2");
-    return v;
 }

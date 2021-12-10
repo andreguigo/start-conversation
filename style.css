@@ -1,93 +1,94 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
 body {
-	align-items: center;
-	background-color: snow;
-	color: black;
-	display: flex;
-	font-family: 'Open Sans', sans-serif;
-	height: 100vh;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
+    align-items: center;
+    background-color: snow;
+    color: black;
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
 section {
-	margin: 0 auto;
-	padding: 10px 20px;
-	width: 50vh;
+    margin: 0 auto;
+    padding: 10px 20px;
+    width: 50vh;
 }
 
 h1 {
-	font-size: 220%;
+    font-size: 220%;
 }
 
-h1, h3 {
-	margin: 5px 0;
-	padding: 5px 0;
+h1,
+h3 {
+    margin: 5px 0;
+    padding: 5px 0;
 }
 
-input, textarea {
-	background-color: snow;
-	border: 1px solid black;
-	border-radius: 25px;
-	color: black;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 120%;
-	margin-bottom: 10px;
-	outline: none;
-	padding: 7px 15px;
-	width: 96%;
+input,
+textarea {
+    background-color: snow;
+    border: 1px solid black;
+    border-radius: 25px;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 120%;
+    margin-bottom: 10px;
+    outline: none;
+    padding: 7px 15px;
+    width: 96%;
 }
 
 button {
-	background-color: black;
-	border: none;
-	border-radius: 25px;
-	color: snow;
-	cursor: pointer;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 120%;
-	margin-bottom: 10px;
-	padding: 7px 5px;
-	width: 100%;
+    background-color: black;
+    border: none;
+    border-radius: 25px;
+    color: snow;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 120%;
+    margin-bottom: 10px;
+    padding: 7px 5px;
+    width: 100%;
 }
 
 .superBox {
-	align-items: center;
-	background-color: rgba(255,255,255,0.5);
-	display: flex;
-	height: 100vh;
-	margin: 0 auto;
-	padding: 0;
-	position: absolute;
-	width: 100%;
-	z-index: 1;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
 }
 
 .statusBox {
-	align-content: center;
-	background-color: white;
-	border-radius: 15px;
-	box-shadow: 0 0 1em gray;
-	cursor: pointer;
-	display: inline-grid;
-	height: 12vh;
-	margin: 0 auto;
-	padding: 10px 20px;
-	width: 25vh;
-	justify-content: center;
+    align-content: center;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 1em gray;
+    cursor: pointer;
+    display: inline-grid;
+    height: 12vh;
+    margin: 0 auto;
+    padding: 10px 20px;
+    width: 25vh;
+    justify-content: center;
 }
 
 .statusBox .statusBoxTitle {
-	color: black;
-	text-align: center;
+    color: black;
+    text-align: center;
 }
 
 .statusBox .statusBoxTxt {
-	border-top: 1px solid black;
-	color: black;
-	margin-top: 10px;
-	padding-top: 10px;
-	text-align: center;
+    border-top: 1px solid black;
+    color: black;
+    margin-top: 10px;
+    padding-top: 10px;
+    text-align: center;
 }
