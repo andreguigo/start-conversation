@@ -1,7 +1,7 @@
 # :key: Inicializador de Conversas
 
-### A simples aplicação inicia uma conversa no Whatsapp sem a necessidade de salvar o número do telefone.
+### Que tal iniciar uma conversa no Whatsapp de forma rápida?
 
-O aplicativo faz parte do desenvolvimento de mini projetos pessoais.
+O código é um exemplo básico de como utilizar a API do Whatsapp para iniciar uma conversa sem a necessidade de salvar o número do telefone.
 
-[Inicializador de Conversas](https://andreguigo.github.io/start-conversation_js)
+[Aqui está um exemplo em produção =)](https://andreguigo.github.io/start-conversation)
