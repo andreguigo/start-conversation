@@ -3,8 +3,7 @@ document.querySelector('[copy]').addEventListener('click', copyLink);
 
 const phone = document.querySelector('[phone]');
 const message = document.querySelector('[message]');
-
-let url_api = `https://api.whatsapp.com/send?phone=+55`
+const url_api = `https://api.whatsapp.com/send?phone=+55`
 
 function createLink() {
     if (!message.value)
